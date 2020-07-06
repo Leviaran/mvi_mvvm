@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Wiki</string>
+
+    <!--Dynamic module titles-->
+    <string name="feature_album">feature wiki</string>
+    <string name="feature_favourite">feature favourite</string>
+    <string name="feature_profile">feature profile</string>
+
+    <!--Bottom menu-->
+    <string name="albums">Wiki</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+    <string name="title_feature_wiki">Module wiki</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:moduleName="feature_wiki"
+    app:startDestination="@id/wikiListFragment">
+    <fragment
+        android:id="@+id/wikiListFragment"
+        android:name="me.randyarba.feature_wiki.presentation.wikilist.WikiListFragment"
+        android:label="WikiListFragment"
+        app:moduleName="feature_wiki">
+        <action
+            android:id="@+id/actionAlbumListToAlbumDetail"
+            app:destination="@id/wikiDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/wikiDetailFragment"
+        android:name="me.randyarba.feature_wiki.presentation.wikidetail.WikiDetailFragment"
+        android:label="WikiDetailFragment"
+        app:moduleName="feature_wiki">
+        <argument
+            android:name="artistName"
+            app:argType="string"/>
+        <argument
+            android:name="albumName"
+            app:argType="string"/>
+        <argument
+            android:name="mbId"
+            app:argType="string"
+            app:nullable="true"/>
+    </fragment>
+</navigation>
